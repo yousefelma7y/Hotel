@@ -1,0 +1,6 @@
+select FIRST_NAME from Guest where CUSTOMER_ID in (select CUSTOMER_ID from BOOKING where RESERVATION_NUMBER > 1751);
+
+select RATES from ROOM where ROOM_NUMBER in (select ROOM_NUMBER from BOOKING where RESERVATION_NUMBER > 1751);
+
+select NUMBER_OF_GUESTS from BOOKING where CUSTOMER_ID in (select CUSTOMER_ID from ROOM where CUSTOMER_ID > 1025648976);
+
